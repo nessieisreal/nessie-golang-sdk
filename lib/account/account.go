@@ -15,7 +15,7 @@ var apiKey = shared.ApiKey
 //GET: Returns the accounts that have been assigned to you
 func GetAllAccounts() string {
 
-    url := "http://api.reimaginebanking.com/accounts?key=" + apiKey
+    url := baseUrl + "accounts?key=" + apiKey
 
     req, err := http.NewRequest("GET", url, nil)
 
